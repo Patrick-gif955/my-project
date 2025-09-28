@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+body{
+    background-color: #012345;
+}
+.container{
+    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 3.5rem;
+    padding-top: 1.5rem;
+}
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+.x{ display: flex;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(rgb(128, 0, 128),rgba(225, 0, 255, 0.185));
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.t{
+    padding-top: 2px;
+    transition: ease 500ms;
+}
+.t span{
+    color: blueviolet;
+}
+.t:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav .q button{
+    background-color: blue;
+    width: 78px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+nav ul li:not(.q){
+    transform: ease 1000ms;
+}
+nav ul li:not(.q):hover{
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
+    cursor: pointer;
+}
+nav .q :hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.801);
+}
+.hero{
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: blueviolet;
+}
+section{
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+    padding-left: 2rem;
+    color: white;
+    line-height: 50px;
+}
+section h2{
+    text-transform: uppercase;
+}
+section img{
+    height: 380px;
+    border-radius: 10px;
+}
+
+.action{
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+.action button{
+    width: 120px;
+    height:40px ;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    border:1px solid white;
+    transition: ease 500ms;
+}
+.action button:hover, .action .view{
+    cursor: pointer;
+    background-color: blue;
+}
+.img2{
+    display: flex;
+}
+.last{
+    width: 150px;
+    height: auto;
+   background-color:transparent;
+   backdrop-filter: blur(20px);
+   box-shadow: 1px 1px 5px black;
+   position: absolute;
+   right: 10px;
+   border-radius: 5px;
+   color: white;
+   bottom: 90px;
+}
+
+.menu{
+    display: none;
+}
+@media (max-width:720px){
+   
+    
+    nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .menu section{
+        display: block;
+        z-index: 1;
+        position: fixed;
+        right: 5px;
+        width: 250px;
+        height: auto;
+        background-color: #081234;
+        box-shadow: 1px 1px 5px black;
+        transition: ease 500s;
+        top: 0;
+    }
+     .menu section {
+        display: none;
+    }
+    .menu section li:hover{
+        color: purple;
+        border-bottom: 3px solid purple;
+        cursor: pointer;
+    }
+    .hero{
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+    section {
+        display: block;
+        padding-left: 1rem;
+        
+    }
+    .main{
+        line-height: 25px;
+        color: white;
+        padding-left: 1.5rem;
+        text-align: center;
+    }
+    .main h2{
+        font-size: large;
+    }
+    .last{
+        bottom: 120px;
+        color: wheat;
+        right: 10px;
+    }
+    .skills{
+        color: white;
+    }
+    header{
+        padding-top: 15px;
+        padding-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Screenshot\ \(74\).png)no-repeat;
+   
+}
+.wrapper{
+    background-color:transparent ;
+    backdrop-filter: blur(20px);
+    width: 320px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgb(0,0, 0);
+}
+.wrapper .form h1{
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    padding: 0.8em 0em;
+}
+.input-box input{
+    width: 100%;
+    border-radius: 20px;
+    border: 1.6px solid grey;
+    padding: 0.5em;
+    font-weight: 500;
+    color: white;
+    font-size: 0.9em;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+}
+.input-box .fa-regular fa-user{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+::placeholder{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(196,187,187);
+    padding: 0em 1em;
+
+}
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.terms input[type="checkbox"]{
+    accent-color: rgb (99,99,153);
+    margin-right: 8px;
+    cursor: pointer;
+}
+.terms label{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: antiquewhite;
+}
+.terms a{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: antiquewhite;
+    padding: 0em 0.5em;
+    padding-left: 8px;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
+.form  .btn{
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.658);
+    background-color: antiquewhite;
+    color:black;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: aliceblue;
+}
+.register{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: antiquewhite;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+.register a{
+    color: white;
+    font-weight: 600;
+    
+}
+.register a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header nav{
+    max-width: 1oopx;
+    background-color:#000;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.btn{
+    margin-right: 25px;
+    margin-left: 15px;
+}
+.btn button{
+    margin-top: 28px;
+    padding: 8px 15px;
+    border-radius: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+.btn button:hover{
+    opacity: .6;
+}
+.btn button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;font-size: 1rem;
+
+}
+.logo{
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    font-family: verdana;
+    padding:15px 25px ;
+    transition: ease 1000ms;
+    cursor: pointer;
+    color: #a52a2a;
+}
+.logo span{
+    color: #fff;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    padding: 15px 25px;
+    align-items: center;
+    margin-right: 30px;
+}
+ul a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: .3 ease;
+}
+main .top{
+    
+    width: 34%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+main .top p{
+    margin-top: 9px;
+    line-height: 1.8rem;
+    font-size: large;
+    font-family: arial;
+}
+.top p span{
+    padding-top: 1px;
+}
+ul a:hover{
+    color: #a52a2a;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+main .info{
+    border: 2px solid #000;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 0 5px;
+    background-color: #000;
+    color: #fff;
+    max-width: 80%;
+}
+.ask h1{
+    text-align: center;
+}
+main input{
+    background-color: #fff;
+    border: none;
+    padding: 0 4px;
+}
+.fbtn button{
+    margin-top: 5px;
+    background-color: #f8a4ce;
+    margin-left: 9rem;
+    padding: 3px 4px;
+    border-radius: 6px;
+    border: none;
+} 
+.fbtn button:hover{
+    opacity: .6;
+}
+.fbtn button a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+}
+.remember p a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:620px){
+    .container header nav{
+        background-color: #d2691e;
+        display: block;
+        
+        
+    }
+    nav ul{
+        justify-content: center;
+    }
+     .btn{
+        justify-self: center;
+    }
+    .btn button{
+        border: none;
+    }
+    .logo{
+        justify-self: center;
+       
+    }
+    main{
+        padding: 2px 3px;
+        display: block;
+    }
+     main .info{
+        background-color: #000;
+       max-width: 100%;
+        
+    }
+    
+    }

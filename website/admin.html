@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Base Trading Investment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--Admin header-->
+    <header class="admin-header">
+        <div class="container">
+            <div class="logo">Base Trading Investment <span>Admin</span></div>
+        
+            <div class="admin-actions">
+                <div class="admin-profile">
+                    <img src="" alt="admin image">
+                    <span>Admin User</span>
+                </div>
+                <button id="LogoutBtn">
+                    <i class="fa-solid fa-right-from-bracket"></i>Logout
+                </button>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars" id="adminMenuToggle"></i>
+            </div>
+         </div>
+        </div>
+    </header>
+    <!--Adimin sidebar-->
+    <aside class="admin-sidebar" id="adminSidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active" data-section="dasboard">
+                        <i class="fa-solid fa-gauge-high"></i>Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="users">
+                        <i class="fa-solid fa-users"></i>Users
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="ransactions">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>Transactions
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="settings">
+                        <i class="fa-solid fa-gear"></i>Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Admin main content-->
+    <main class="admin-main">
+        <div class="container">
+            <!--dashboard section-->
+            <section id="dashboardSection" class="admin-section">
+                <h1> <i class="fa-solid fa-gauge-high"></i>Dashboard Overview</h1>
+                <!--stats cards-->
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                             <i class="fa-solid fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3>Active Traders</h3>
+                    <p id="activeTraders">0</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3>Today's Transactions</h3>
+                    <p id="dailyTransactions">0</p>
+                </div>
+                <!--recent activity-->
+                <div class="activity-feed">
+                    <h2><i class="fa-solid fa-clock"></i>Recent Activity</h2>
+                    <ul id="activityList">
+                        <!--javascript functions here-->
+                        <li class="empty-state">Loading activity...</li>
+                    </ul>
+                </div>
+            </section>
+            <!--users section-->
+            <section id="usersSection" class="admin-section" style="display: none;">
+                <!--javascript loads users table-->
+                <div class="section-loading">
+                    <i class="fa-solid fa-spinner"></i>Loading users
+                </div>
+                <!-- for other sections -->
+            </section>
+        </div>
+    </main>
+    <!--mobile navigation-->
+    <div class="mobile-nav" id="adminMobileNav">
+        <a href="#" data-section="dashboard"> <i class="fa-solid fa-gauge-high"></i>Dashboard</a>
+        <a href="#" data-section="users"><i class="fa-solid fa-users"></i>Users</a>
+        <a href="#" data-section="transactions"><i class="fa-solid fa-arrow-right-arrow-left"></i>Transactions</a>
+        <a href="#" data-section="settings"> <i class="fa-solid fa-gear"></i>Settings</a>
+        <a href="#" id="mobileLogoutBtn"> <i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+    </div>
+    <!--user detail modal-->
+    <div class="modal" id="userModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">User Details</h2>
+            <div class="modal-body" id="modalBody">
+                <!--content loads here-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

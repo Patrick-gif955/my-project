@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper{
+    max-width: 100%;
+    max-height: 100vh(100-150px);
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding-left: 6rem;
+    justify-content: space-between;
+    padding-right: 135px;
+    
+}
+
+.logo a{
+    font-family: 'Playfair';
+    font-size: xx-large;
+}
+nav ul{
+    display: flex;
+    gap: 3.5rem;
+}
+nav ul a{
+    font-size: large;
+}
+.menu{
+   justify-content: end;
+   top: 0;
+    display: none;
+    
+}
+.menu p{
+    padding-left: 6rem;
+}
+.menu  .u{
+     display:none;
+    top: 0;
+    margin-top: 50px;
+    gap: 3rem;
+    width: 250px;
+    height: 170px;
+    background-color: antiquewhite;
+    z-index: 1;
+    backdrop-filter:  blur(20px);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+}
+.menu section i{
+    padding-left: 205px;
+    
+}
+.menu section ul{
+    padding-bottom: 35px;
+    
+}
+.menu section ul li{
+    width: 100%;
+}
+.hero{
+   display: flex;
+   align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    gap: 50px;
+    padding-left: 40px;
+}
+.hero img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px 0 15px 0px;
+} 
+h1, h2, h3{
+    font-family: 'playfair';
+}
+p{
+    font-family: 'poppins';
+    line-height: 35px;
+    font-size: large;
+}
+.about{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    padding-left: 40px;
+}
+.about img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.gallary{
+    max-width: 100%;
+    padding-top: 20px;
+}
+.gallary h2{
+    text-align: center;
+}
+.necklaces{
+    max-width: 100%;
+}
+.necklaces h3{
+    text-align: center;
+}
+.necklaces img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+.necklaces img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.images-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.image-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.bracelets {
+    max-width: 100%;
+}
+.bracelets h3{
+    text-align: center;
+}
+.bracelets img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+.bracelets img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.img2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.img3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.contact{
+    max-width: 100%;
+}
+.contact h3{
+    text-align: center;
+}
+.contact p {
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
+    }
+}
+

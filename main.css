@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.two{
+    display: flex;
+    width: 100%;
+}
+.main{
+    width: 50%;
+    background-color: whitesmoke;
+}
+.logo{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.intro{  
+    position: absolute;
+    top: 30%;
+    left:17%
+}
+.intro h2{
+    font-family: verdana;
+    font-size: 1.6rem;
+    color: green;
+    width: 25pxpx;
+}
+.intro p{
+    color: green;
+    padding-left: 15px;
+}
+.img{
+   width: 50%;
+        
+}
+.img img{
+    height: 99vh;
+    width: 675px;
+    object-fit: cover;
+}
+.input{
+    left: 15%;
+    position: absolute;
+    top: 39%;
+}
+.input .input1{
+    width: 256px;
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 8px;
+    margin-top: 2px;
+    border-radius: 10px;
+    border: 1px outset black;
+}
+.input .input1:focus{
+    border: 3px solid green;
+}
+.input-2{
+    
+    position: absolute;
+    top: 49%;
+    left: 15%;
+}
+
+
+.input-2 .input2{
+    width: 256px;
+    height:30px ;
+   padding-left: 8px;
+   margin-top: 2px;
+   border-radius: 10px;
+   border: 1px outset black;
+   background-color: white;
+}
+.input-2 .input2:focus{
+    border-top: 2px solid green;
+}
+label{
+    margin-bottom: 20px;
+}
+.info{
+    position: absolute;
+    top:59% ;
+    left: 15%;
+    display: flex;
+    gap: 2rem;
+}
+
+ .btn {
+    
+    position: absolute;
+    top: 65%;
+    left: 14.5%;
+    
+}
+.btn button{
+    width: 257px;
+    height: 29px;
+    background-color: green;
+    border-radius: 3rem;
+    border: none;
+    transition: background-color 0.3s;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.89);
+}
+
+.q{
+    
+    top: 72%;
+    position: absolute;
+    left: 17%;
+}
+footer{
+    position: absolute;
+    top: 95%;
+}
+.t:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+p small span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

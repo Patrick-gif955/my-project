@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    
+}
+.container section .container-1{
+    width: 20%;
+}
+.container-1 header h1{
+    font-size: 2rem;
+    font-family: system-ui;
+    color: orange;
+}
+.container-1 header h1{
+    margin-bottom: 80px;
+}
+.container-1 header span{
+    color: #000;
+}
+.container-1{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.container-1 div p{
+    transition:ease 500ms;
+}
+
+.container-1 div p:hover{
+    color: orange;
+    cursor: pointer;
+    border-right: solid 3px orange;
+}
+
+.container-2{
+    width: 60%;
+    height: 100%;
+    padding-top:15px ;
+    padding-left: 25px;
+}
+.container-2 header{
+    padding-left: 29px;
+    padding-top: 10px;
+    display: flex;
+    height: 40px;
+    padding-bottom: 22px;
+    
+}
+.container-1 p{
+    font-family: system-ui;
+}
+
+.container-2 header input{
+    width: 35%;
+    border: none;
+    height: 42px;
+    opacity: .4;
+    border-radius: 3rem;
+    
+    padding-left: 17px;
+    font-size: large;
+    background:lightgray;
+}
+.btn-1 {
+    
+    background-color: #ff914d;
+    height: 40px;
+     cursor: pointer;
+    border: none;
+    width: 85px;
+    border-radius: 3rem;
+    padding-left: -15px;
+}
+.btn-1 button {
+    left: -15px;
+    padding-right: 25px;
+   
+}
+.btn-1:hover{
+    background-color: #ff7b29;
+}
+.body{
+    background-color: lightgray;
+    
+    
+}
+.body nav{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 23px;
+}
+.body nav button{
+    height: 43px;
+    padding: 6px;
+    transition:ease .3s;
+    margin:5px 0 5px 0 ;
+    border-radius: 3rem;
+    width: 80px;
+    font-family: system-ui;
+    border: none;
+}
+.body nav button:hover{
+    cursor: pointer;
+    background-color: #ff914d;
+}
+ #btn-2 {
+    width: 93px;
+    padding: 6px;
+}
+.main .one{
+    display: flex;
+    gap: 1.2rem;
+    padding-left: 20px;
+}
+.one-1{
+    display: flex;
+    gap: .7rem;
+    padding-left: 12px;
+    width:40% ;
+    height: auto;
+    background-color: #fff;
+}
+.one-1 figure img{
+    width: 65px;
+    height: auto;
+    background-color: transparent;
+    padding-top: 15px;
+}
+.btn-2{
+    padding-top: 10px;
+    gap: 2rem;
+}
+.btn-2 button{
+    border: none;
+    border-radius: 3rem;
+    width: 46px;
+    height: auto;
+    justify-content: space-between;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-left: 8px;
+
+}
+.btn-2 button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+section-one{
+    background-color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section-one p{
+    color: #ff7b29;
+    padding: 3px 5px 3px 5px;
+}
+.btn-3 {
+    margin-left: 16px;
+    width: 120px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: orange;
+    cursor: pointer;
+}
+.btn-3:hover{
+    background-color: #ff914d;
+}
+.one-2{
+    display: flex;
+    background-color: #fff;
+    gap: .7rem;
+    width: 40%;
+    height: auto;
+}
+.one-2 .img1 img,figcaption {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+section .img1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 6px;
+
+}
+section .img1 p{
+    color: #ff7b29;
+    padding-bottom: 7px;
+    
+}
+section .img1 h3{
+    padding-bottom: 7px;
+    
+}
+.btn-4{
+    padding-top:7px ;
+    border: none;
+    width: 170px;
+    
+}
+
+.btn-4 button{
+    border: none;
+    border-radius: 10px;
+    width: 45px;
+}
+.btn-4 button:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.btn-5{
+    padding-top: 4px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+.btn-5 button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+
+}
+.btn-5 button:hover{
+    background-color: #ff7b29;
+}
+.two{
+    padding-top: 20px;
+    display: flex;
+    padding-left: 20px;
+    gap: 1.2rem;
+    padding-bottom: 25px;
+}
+section .two1{
+    display: flex;
+    width: 41.5%;
+    gap: .7rem;
+    background-color: #fff;
+}
+section .two1 img{
+    width:72px ;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.text-1 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff7b29;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.text-1 .btn-6{
+    border: none;
+}
+.text-1  .btn-6 button{
+    margin-top: 5px;
+    border: none;
+    width: 45px;
+    border-radius: 10px;
+}
+.text-1 button:hover{
+    background-color: #000;
+    cursor: pointer;
+    color: white;
+}
+.text-1 h3{
+    padding-bottom: 10px;
+}
+.btn-7{
+    border: none;
+    margin-left: 7px;
+    width: 130px;
+    margin-top: 3px;
+}
+.btn-7 button{
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: orange;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+.btn-7 button:hover{
+    background-color: #ff7b29;
+    color: #000;
+}
+.two2{
+    width: 40%;
+    height: auto;
+}
+.text-2{
+    display: flex;
+    gap: .7rem;
+    height: auto;
+    background-color: #fff;
+}
+.text-2 img{
+    width:74px ;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 10px;
+    border-color: transparent;
+}
+section .text2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+section .text2 p{
+    padding: 3px 5px 3px 5px;
+    color: #ff7b29;
+}
+.btn8 button{
+    border: none;
+    width: 45px;
+    border-radius: 3rem;
+}
+.btn8 button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.btn-9 button{
+    border: none;
+    margin-left: 9px;
+    margin-top: 4px;
+    margin-bottom:12px;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: orange;
+}
+.btn-9 button:hover{
+    background-color: #ff7b29;
+    cursor: pointer;
+}
+/*for container-3*/
+.container-3{
+    width: 20%;
+    display: block;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+ .container-3 header{
+    display: flex;
+    gap: .3rem;
+ }
+ .container-3 header img{
+    width: 65px;
+    height: 65px;
+    border-radius: 3rem;
+    object-fit: cover;
+ }
+ 
+ .last h3{
+    margin-top: 29px;
+    margin-bottom: 20px;
+ }
+ .last ul{
+    list-style: none;
+    display: flex;
+    gap: .8rem;
+ }
+ ul button{
+    width: 73px;
+    height: 35px;
+    border: none;
+    border-radius: 3rem;
+    padding: 4px 4px ;
+ }
+ ul button:hover{
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+ }
+ div .img3{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: .8rem;
+}
+div.img5{
+    
+    display: flex;
+    gap: .8rem;
+}
+h5{
+    font-family: cursive;
+}
+p small{
+    color: gray;
+}
+ .hr{
+    padding-top: 11px;
+    padding-left: -34px;
+    width: 900;
+ }
+ .table{
+    padding-top: 25px;
+ }
+.p{
+    padding-top: 10px;
+    color: orange;
+}
+.btna{
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 125px;
+    height: 32px;
+    border: none;
+    border-radius: 3rem;
+    background-color: orange;
+}
+.btna:hover{
+        cursor: pointer;
+        background-color: #ff7b29;
+}

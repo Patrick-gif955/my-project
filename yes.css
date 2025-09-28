@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.281),rgba(0, 0, 0, 0.493)),url(Screenshots/nature.jpg)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.container{
+    width: 900px;
+    height: 450px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #252525;
+    overflow: hidden;
+    position: relative;
+}
+.container .slider{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slider .slide{
+    width: 20%;
+    transition: 2s;
+}
+.slider input{
+    display: none;
+}
+.slider .slide img{
+    width: 900px;
+    height: 100%;
+}
+.btn{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    display: flex;
+    gap: 2rem;
+}
+.btn label{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .8s;
+}
+.btn label:hover{
+    background-color: white;
+}
+#r1:checked~ .s1{
+    margin-left: 0;
+}
+#r2:checked~ .s1{
+    margin-left: -20%;
+}
+#r3:checked~ .s1{
+    margin-left: -40%;
+}
+#r4:checked~ .s1{
+    margin-left: -60%;
+}
+#r5:checked~ .s1{
+    margin-left: -80%;
+}

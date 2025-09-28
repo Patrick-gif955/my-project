@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register-Base Trading Investment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Base Trading Investment</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Trade</a></li>
+                    <li><button><a href="login.html">Login</a></button></li>
+                    <li><button><a href="register.html">Sign up</a></button></li>
+                    
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Create Your Account</h2>
+                    <p>Start your crypto journey today</p>
+                </div>
+                <form  id="registerform">
+                    <div class="form-group">
+                        <label for="regName">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" id="regName" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <div class="input-with-icon">
+                             <i class="fa-solid fa-envelope"></i>
+                             <input type="email" name="email" id="regEmail" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Paswword</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="password" id="regPassword" placeholder="Create a password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="Confirm password" id="regConfirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <label >
+                            <input type="checkbox" >I agree to the <a href="#">Terms Of Service</a>and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-btn-block">Create Account</button>
+                    <div class="auth-footer">
+                        <p>Already have an account?<a href="login.html">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2025 Base Trading Investment.All rights reserved.</p>
+    </footer>
+</body>
+</html>
