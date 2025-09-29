@@ -5,6 +5,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
   height: 100vh;
@@ -15,6 +18,9 @@ body {
 }
 ul li a {
   transition: 500ms ease;
+  font-size: large;
+  font-weight: bold;
+  color: blueviolet;
 }
 header {
   display: flex;
@@ -38,6 +44,16 @@ header {
   align-items: center;
   gap: 1rem;
 }
+.logo h3 {
+  transition: ease 500ms;
+  font-size: x-large;
+  font-weight: bold;
+  color: blueviolet;
+}
+.logo h3:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
 .logo img {
   width: 25%;
   height: auto;
@@ -49,6 +65,11 @@ nav ul {
   display: flex;
   gap: 3rem;
   padding-right: 2.5rem;
+}
+nav ul a {
+  color: blueviolet;
+  font-weight: bold;
+  transition: ease 500ms;
 }
 nav ul a:hover {
   cursor: pointer;
