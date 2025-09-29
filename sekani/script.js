@@ -37,10 +37,10 @@ console.log(y)
 const maxAge= ageMary=>30;
 console.log(now - ageMary>=maxAge)*/
 function displayToggle() {
-  const menu = document.querySelector(".u");
+  const menu = document.querySelector(".menu");
   menu.style.display = "flex";
 }
 function hideToggle() {
-  const menu = document.querySelector(".u");
+  const menu = document.querySelector(".menu");
   menu.style.display = "none";
 }

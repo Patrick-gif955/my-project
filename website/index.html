@@ -1,155 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base Trading Investment</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">Base Trading Investment</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Markets</a></li>
-                    <li><a href="#">Trade</a></li>
-                    <li><button><a href="login.html">Login</a></button></li>
-                    <li><button><a href="register.html">Sign up</a></button></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu" id="toggle">
-                 <i class="fa-solid fa-bars" ></i>
-            </div>
-            <div class="mobile-nav" id="mobileNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Markets</a></li>
-                    <li><a href="#">Trade</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Sign up</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="logo">Base Trading Investment</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Trade</a></li>
+            <li>
+              <button><a href="login.html">Login</a></button>
+            </li>
+            <li>
+              <button><a href="register.html">Sign up</a></button>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu" id="toggle">
+          <p><i class="fa-solid fa-bars" onclick="displayToggle()"></i></p>
+          <div class="mobile-nav" id="mobileNav">
+            <span><i class="fa-solid fa-x" onclick="hideToggle()"></i></span>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Markets</a></li>
+              <li><a href="#">Trade</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Sign up</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Trade Crypto Currencies <span>With Confidence</span></h1>
-                <p>Join over 1million users investng in Bitcoin, Eutherum and more</p>
-                <div class="hero-buttons">
-                    <a href="register.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i>Get Started</a>
-                    <a href="#Markets" class="btn btn-outline"><i class="fa-solid fa-coins"></i>Explore Markets</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/My btc.jpeg" alt="Crypto currency illustration" width="600">
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Trade Crypto Currencies <span>With Confidence</span></h1>
+          <p>Join over 1million users investng in Bitcoin, Eutherum and more</p>
+          <div class="hero-buttons">
+            <a href="register.html" class="btn btn-primary"
+              ><i class="fa-solid fa-rocket"></i>Get Started</a
+            >
+            <a href="#Markets" class="btn btn-outline"
+              ><i class="fa-solid fa-coins"></i>Explore Markets</a
+            >
+          </div>
         </div>
+        <div class="hero-image">
+          <img
+            src="images/My btc.jpeg"
+            alt="Crypto currency illustration"
+            width="600"
+          />
+        </div>
+      </div>
     </section>
     <section class="features">
-        <div class="container">
-            <h2>Why choose Base Trading Investment</h2>
-            <div class="features-grid">
-                <!--feature 1-->
-                <a href="#Markets" class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <h3>Secure Trading</h3>
-                    <p>Bank-level encryption to protect your assets.</p>
-                </a>
-                <!--feature 2-->
-                <a href="#trade" class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-gauge-simple-high"></i>
-                    </div>
-                    <h3>Lightning Fast</h3>
-                    <p>Executes trade in milliseconds.</p>
-                </a>
-                <!--feature 3-->
-                <a href="register.html" class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <h3>Low Fees</h3>
-                    <p>0.1% trading fees, the lowest in the industry.</p>
-                </a>
+      <div class="container">
+        <h2>Why choose Base Trading Investment</h2>
+        <div class="features-grid">
+          <!--feature 1-->
+          <a href="#Markets" class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-halved"></i>
             </div>
+            <h3>Secure Trading</h3>
+            <p>Bank-level encryption to protect your assets.</p>
+          </a>
+          <!--feature 2-->
+          <a href="#trade" class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-gauge-simple-high"></i>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>Executes trade in milliseconds.</p>
+          </a>
+          <!--feature 3-->
+          <a href="register.html" class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3>Low Fees</h3>
+            <p>0.1% trading fees, the lowest in the industry.</p>
+          </a>
         </div>
+      </div>
     </section>
     <!--market overview-->
     <section class="market-overview" id="markets">
-        <div class="container">
-            <h2>Cryptocurrencies</h2>
-            <div class="crypto-grid">
-                <!--crypto 1-->
-                <a href="#trade" class="crypto-card">
-                    <img src="images/btc-image.jpeg" alt="Bitcoin" width="50">
-                    <h3>Bitcoin <span>BTC</span></h3>
-                    <p class="price">$36, 842.10</p>
-                    <p class="change-positive"><i class="fa-solid fa-arrow-up"></i>+2.34%</p>
-                </a>
-                <!--crypto 2-->
-                <a href="#trade" class="crypto-card">
-                    <img src="images/Eutherum.jpeg" alt="Ethereum" width="50">
-                    <h3>Ethereum <span>ETH</span></h3>
-                    <p class="price">$1,985.43</p>
-                    <p class="change-positive"><i class="fa-solid fa-arrow-up"></i>+0.45%</p>
-                </a>
-                <!--crypto 3-->
-                <a href="#trade" class="crypto-card">
-                    <img src="images/cardano.jpeg" alt="Cradano" width="50">
-                    <h3>Cardano <span>ADA</span></h3>
-                    <p class="price">$0.38</p>
-                    <p class="change-positve"><i class="fa-solid fa-arrow-up"></i>+0.45%</p>
-                </a>
-            </div>
+      <div class="container">
+        <h2>Cryptocurrencies</h2>
+        <div class="crypto-grid">
+          <!--crypto 1-->
+          <a href="#trade" class="crypto-card">
+            <img src="images/btc-image.jpeg" alt="Bitcoin" width="50" />
+            <h3>Bitcoin <span>BTC</span></h3>
+            <p class="price">$36, 842.10</p>
+            <p class="change-positive">
+              <i class="fa-solid fa-arrow-up"></i>+2.34%
+            </p>
+          </a>
+          <!--crypto 2-->
+          <a href="#trade" class="crypto-card">
+            <img src="images/Eutherum.jpeg" alt="Ethereum" width="50" />
+            <h3>Ethereum <span>ETH</span></h3>
+            <p class="price">$1,985.43</p>
+            <p class="change-positive">
+              <i class="fa-solid fa-arrow-up"></i>+0.45%
+            </p>
+          </a>
+          <!--crypto 3-->
+          <a href="#trade" class="crypto-card">
+            <img src="images/cardano.jpeg" alt="Cradano" width="50" />
+            <h3>Cardano <span>ADA</span></h3>
+            <p class="price">$0.38</p>
+            <p class="change-positve">
+              <i class="fa-solid fa-arrow-up"></i>+0.45%
+            </p>
+          </a>
         </div>
+      </div>
     </section>
     <section class="cta">
-        <div class="container">
-            <h3>Ready to Start Trading?</h3>
-            <p>Create your free account under 2 minutes.</p>
-            <a href="register.html" class="btn btn-large">Sign Up Now</a>
-        </div>
+      <div class="container">
+        <h3>Ready to Start Trading?</h3>
+        <p>Create your free account under 2 minutes.</p>
+        <a href="register.html" class="btn btn-large">Sign Up Now</a>
+      </div>
     </section>
     <!--footer-->
     <footer>
-        <div class="container">
-            <div class="logo">Base Trading Investment</div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Trade</h4>
-                    <ul>
-                        <li><a href="#markets">Markets</a></li>
-                        <li><a href="#trade">Spot Trading</a></li>
-                        <li><a href="#">Fees</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Legal</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="logo">Base Trading Investment</div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Trade</h4>
+            <ul>
+              <li><a href="#markets">Markets</a></li>
+              <li><a href="#trade">Spot Trading</a></li>
+              <li><a href="#">Fees</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Base Trading Investment. All rights reserverd.</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Base Trading Investment. All rights reserverd.</p>
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
