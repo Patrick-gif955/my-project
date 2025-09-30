@@ -273,7 +273,7 @@ footer {
   }
 }
 .hero {
-  padding: 6rem 0 3rem;
+  align-items: center;
 }
 
 .hero h1 {
