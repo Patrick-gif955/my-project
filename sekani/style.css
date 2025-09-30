@@ -227,11 +227,11 @@ footer p {
 @media (max-width: 720px) {
   .hero {
     display: block;
-    padding-left: 0px;
+    padding: none;
     text-align: center;
   }
   .hero img {
-    width: 90%;
+    width: 80%;
   }
   nav {
     display: none;
